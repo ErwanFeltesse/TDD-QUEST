@@ -2,7 +2,9 @@
 const assert = require('assert');
 
 function capitalizeFirst(input) {
-    return input[0].toUpperCase() + input.slice(1);
+    return input.length > 0
+      ? input[0].toUpperCase() + input.slice(1)
+      : '';
   }
 
 // Check that capitalizeFirst is a function
@@ -15,3 +17,5 @@ assert.strictEqual(capitalizeFirst('javaScript'), 'JavaScript');
 assert.strictEqual(capitalizeFirst('z'), 'Z');
 // Check that it works for an empty string
 assert.strictEqual(capitalizeFirst(''), '');
+
+module.exports = capitalizeFirst;
