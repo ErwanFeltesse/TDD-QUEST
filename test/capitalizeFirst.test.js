@@ -2,7 +2,6 @@
 const assert = require('assert');
 const capitalizeFirst = require('../capitalizeFirst');
 
-// give the test suite a label using describe
 describe('capitalizeFirst', () => {
   // give the test a label using it
   it('is a function accepting one argument', () => {
