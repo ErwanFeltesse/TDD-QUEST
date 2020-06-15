@@ -1,19 +1,19 @@
 const assert = require('assert');
 const Rectangle = require('../Rectangle')
-let rectangle = new Rectangle
+
 
 describe('Rectangle', () => {
   // give the test a label using it
   it('is Rectangle a square ', () => {
     
-    assert.strictEqual(rectangle.isSquare(5,5), true);
-    assert.strictEqual(rectangle.isSquare(5,6), false)
+    assert.strictEqual(new Rectangle(5,5).isSquare(), true);
+    assert.strictEqual(new Rectangle(5,6).isSquare(), false)
  });
- it ('is the proper area returned', () =>{
-   assert.strictEqual(rectangle.getArea(13,7) ,91)
+ it ('get area', () =>{
+   assert.strictEqual(new Rectangle(13,7).getArea(),91)
  })
-it ( 'is rectangle return the good perimeter', () => {
-  assert.strictEqual(rectangle.getPerimeter(13,7),40)
+it ( 'get perimeter', () => {
+  assert.strictEqual(new Rectangle(13,7).getPerimeter(),40)
 })
   
 });

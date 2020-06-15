@@ -4,16 +4,16 @@ class Rectangle {
       this.b = b;
     }
   
-    isSquare(a,b) {
-  if (a === b) {return true} else {return false}
+    isSquare() {
+    if (this.a === this.b) {return true} else {return false}
     }
   
-    getArea(a,b) {
-    return a*b
+    getArea() {
+    return this.a*this.b
     }
   
-    getPerimeter(a,b) {
-  return ((a+b)*2)
+    getPerimeter() {
+  return ((this.a+this.b)*2)
     }
   }
   
